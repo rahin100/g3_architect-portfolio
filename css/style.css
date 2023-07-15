@@ -90,3 +90,28 @@ nav li a {
     width: 100%;
 }
 /* responsive media query  */
+/* for samll devices  */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+        
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner-content{
+        width: 100%;
+    }
+}
+/* for medium devices  */
+@media screen and (min-width:577px) and (max-width: 960px){
+    header{
+        padding: 20px; 
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner-content{
+        width: 100%;
+    }
+}
