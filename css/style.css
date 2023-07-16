@@ -110,6 +110,11 @@ main {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     border: 1px solid red;
+    margin-left: 200px;
+}
+
+.teams-img-container img {
+    width: 200px;
 }
 
 .teams-content {
@@ -155,36 +160,47 @@ main {
     display: flex;
     margin-top: 130px;
     gap: 100px;
+    margin-bottom: 130px;
+}
+
+.feature-content {
+    margin-left: 200px;
+    margin-top: 20px;
 }
 
 .feature-title {
     color: #131313;
     font-size: 45px;
     font-weight: 700;
-    margin-bottom: 24px;
     border-left: 5px solid #FF900E;
     padding-left: 20px;
+    margin: 0;
 }
 
 .feature-description {
-    color: var(--dark-03, #727272);
+    color: #727272;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    width: 586px;
+    width: 506px;
+    margin-top: 20px;
 }
 
 .feature-content .card {
     border-radius: 8px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 8px 20px;
+    margin-bottom: 10px;
+    width: 460px;
 }
-.feature-img img{
+
+.feature-img img {
     height: 90%;
-    /* margin-left: 50px; */
+    width: 450px;
+    margin-left: -30px;
 }
+
 .f-card-title {
     color: #131313;
     font-size: 20px;
@@ -193,7 +209,7 @@ main {
 
 .f-card-description {
     color: #727272;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 26px;
     width: 514px;
@@ -207,7 +223,7 @@ main {
     padding: 45px 42px;
     position: relative;
     bottom: 100px;
-    right: 60px;
+    right: 70px;
 }
 
 .ten-years-batch h2 {
@@ -229,6 +245,11 @@ main {
 }
 
 /* facts part style  */
+.facts {
+    padding: 0 200px;
+    margin-bottom: 120px;
+}
+
 .facts-title {
     color: #131313;
     font-size: 45px;
@@ -272,6 +293,9 @@ main {
 }
 
 /* sponsor part style  */
+.sponsor {
+    padding: 0 200px;
+}
 
 .sponsor-title {
     color: #131313;
@@ -303,6 +327,22 @@ main {
     width: 165px;
 }
 
+/* footer part style  */
+.footer {
+    margin-top: 130px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin: 0 220px;
+}
+
+.footer p {
+    color:  #424242;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 30px 200px;
+}
+
 /* responsive media query  */
 /* for small devices  */
 @media screen and (max-width: 576px) {
@@ -322,9 +362,11 @@ main {
     .teams-img-container {
         grid-template-columns: 1fr;
     }
-    .feature-img img{
+
+    .feature-img img {
         width: 90%;
     }
+
     .teams-content,
     .facts-card-container {
         padding-left: 20px;
