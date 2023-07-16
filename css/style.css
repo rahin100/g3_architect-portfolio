@@ -150,6 +150,84 @@ main {
     margin-bottom: 32px;
 }
 
+/* feature part style  */
+.features {
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
+
+.feature-title {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-description {
+    color: var(--dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 586px;
+}
+
+.feature-content .card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.feature-img img{
+    height: 90%;
+    /* margin-left: 50px; */
+}
+.f-card-title {
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.f-card-description {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 514px;
+}
+
+.ten-years-batch {
+    border-radius: 8px;
+    background: #FF900E;
+    width: 250px;
+    height: 130px;
+    padding: 45px 42px;
+    position: relative;
+    bottom: 100px;
+    right: 60px;
+}
+
+.ten-years-batch h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 70px;
+    margin: 0;
+}
+
+.ten-years-batch p {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    margin: 0;
+}
+
 /* facts part style  */
 .facts-title {
     color: #131313;
@@ -213,15 +291,18 @@ main {
     margin: 0 auto;
     margin-bottom: 50px;
 }
-.sponsor-img-container{
+
+.sponsor-img-container {
     display: flex;
     justify-content: space-evenly;
-    gap:50px; 
+    gap: 50px;
     align-items: center;
 }
-.sponsor-img-container img{
+
+.sponsor-img-container img {
     width: 165px;
 }
+
 /* responsive media query  */
 /* for small devices  */
 @media screen and (max-width: 576px) {
@@ -232,14 +313,18 @@ main {
 
     nav,
     .teams-container,
-    .facts-card-container,.sponsor-img-container {
+    .features,
+    .facts-card-container,
+    .sponsor-img-container {
         flex-direction: column;
     }
 
     .teams-img-container {
         grid-template-columns: 1fr;
     }
-
+    .feature-img img{
+        width: 90%;
+    }
     .teams-content,
     .facts-card-container {
         padding-left: 20px;
@@ -259,6 +344,7 @@ main {
     .teams-content {
         width: 100%;
     }
+
     .sponsor-description {
         width: 400px;
     }
